@@ -1,4 +1,3 @@
-```markdown
 # Документация Telegram-бота "GoyGrevBot"
 
 ## Описание проекта
@@ -18,9 +17,7 @@
 
 ### Установка зависимостей
 
-```bash
 pip install aiogram asyncpg
-```
 
 ### Настройки базы данных (PostgreSQL 17)
 
@@ -336,4 +333,3 @@ async def send_long_message(message: Message, callback_query: CallbackQuery, tex
     *   **Назначение**: Основная асинхронная функция, запускающая бота и фоновую задачу по отправке напоминаний.
 *   **`if __name__ == "__main__":`**
     *   Запускает функцию `main()` при непосредственном выполнении скрипта.
-```
