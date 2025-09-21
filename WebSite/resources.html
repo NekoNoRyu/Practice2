@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrevTech - Ресурсы</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --primary-color: #1e1e2f;
+            --secondary-color: #27293d;
+            --accent-color: #4a90e2;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --border-color: #3a3f58;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--header-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background-color: var(--accent-color);
+            color: var(--header-color);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        h1, h2 {
+            color: var(--header-color);
+        }
+
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; }
+
+        section {
+            background-color: var(--primary-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+        .resource-list li {
+            background-color: var(--secondary-color);
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color);
+        }
+        .resource-list a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #aaa;
+        }
+
+        @media (min-width: 768px) {
+            .site-header .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">ProgrevTech</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Домашняя</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Участники</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html" class="active">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Полезные ресурсы</h1>
+
+        <section>
+            <h2>Организации-партнёры</h2>
+            <p>В рамках нашего проекта мы предлагаем пользователям воспользоваться продуктами проверенных финансовых организаций.</p>
+            <ul class="resource-list">
+                <li><a href="https://alfa.me/DyNGcP" target="_blank" rel="noopener noreferrer">Альфа-Банк</a> — партнёр для категорий «Гой» и «Будущий миллионер».</li>
+                <li><a href="https://vtb.ru/l/ta468989" target="_blank" rel="noopener noreferrer">ВТБ</a> — партнёр для категории «Средний класс».</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Рекомендуемая литература</h2>
+            <p>Эти книги — отличная отправная точка для тех, кто получил результат «Серая масса» и хочет начать свой путь к финансовой свободе.</p>
+            <ul class="resource-list">
+                <li>Думай и богатей — Наполеон Хилл</li>
+                <li>Самый богатый человек в Вавилоне — Джордж Клейсон</li>
+                <li>Путь к финансовой свободе — Бодо Шефер</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Тематические статьи</h2>
+            <p>Подборка полезных статей для начинающих инвесторов и всех, кто хочет навести порядок в своих финансах.</p>
+            <ul class="resource-list">
+                <li><a href="https://example.com/invest-0" target="_blank" rel="noopener noreferrer">Как начать инвестировать с нуля: пошаговое руководство</a></li>
+                <li><a href="https://example.com/finance-basics" target="_blank" rel="noopener noreferrer">Основы финансовой грамотности: как управлять своими деньгами</a></li>
+                <li><a href="https://example.com/bad-habits" target="_blank" rel="noopener noreferrer">10 привычек, которые мешают вам разбогатеть</a></li>
+                <li><a href="https://example.com/financial-goals" target="_blank" rel="noopener noreferrer">Почему важно ставить финансовые цели</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProgrevTech. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

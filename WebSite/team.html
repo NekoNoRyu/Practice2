@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrevTech - Участники</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --primary-color: #1e1e2f;
+            --secondary-color: #27293d;
+            --accent-color: #4a90e2;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --border-color: #3a3f58;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--header-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background-color: var(--accent-color);
+            color: var(--header-color);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        h1, h2, h3, h4{
+            color: var(--header-color);
+        }
+
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
+        h3 { font-size: 1.5rem; }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .team-member {
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        .team-member h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        .team-member .role {
+            font-style: italic;
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #aaa;
+        }
+
+        @media (min-width: 768px) {
+            .site-header .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">ProgrevTech</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Домашняя</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html" class="active">Участники</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Наша Команда</h1>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Манжиков Владимир</h3>
+                <h4>241-339</h4>
+                <p class="role">Lead Developer & Content Architect</p>
+                <p>Разработал всю программную архитектуру Telegram-бота на Python (Aiogram), включая асинхронное взаимодействие с базой данных. Создал весь интерактивный контент: систему тестов, механику начисления баллов, сценарий визуальной новеллы и все тексты внутри бота, объединив роли программиста и креативного директора.</p>
+            </div>
+            <div class="team-member">
+                <h3>Храмцов Максим</h3>
+                <h4>241-339</h4>
+                <p class="role">Frontend Developer & Project Manager</p>
+                <p>Разработал и сверстал данный веб-сайт с использованием HTML5 и CSS, обеспечив его адаптивность. Подготовил полную проектную документацию и итоговый отчёт по результатам деятельности, отвечая за внешнее представление и документирование проекта.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProgrevTech. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

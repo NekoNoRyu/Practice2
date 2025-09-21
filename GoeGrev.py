@@ -31,7 +31,7 @@ LITERATURE_LIST = [
 
 # Список статей для Gray Mass
 ARTICLE_LIST = [
-    "Как начать инвестировать с нуля: пошаговое руководство — https://example.com/invest101",
+    "Как начать инвестировать с нуля: пошаговое руководство — https://example.com/invest-0",
     "Основы финансовой грамотности: как управлять своими деньгами — https://example.com/finance-basics",
     "10 привычек, которые мешают вам разбогатеть — https://example.com/bad-habits",
     "Почему важно ставить финансовые цели — https://example.com/financial-goals"
@@ -236,7 +236,7 @@ async def send_welcome(message: Message):
         await conn.close()
 
     await message.answer(
-        "Шалом! Я @GoyGrevBot. \nГотов пройти тест и узнать свой уровень понимания нашего мира? Пиши /test\n"
+        "Шалом! Я @GoeGrevBot. \nГотов пройти тест и узнать свой уровень понимания нашего мира? Пиши /test\n"
         "Для списка команд: /help"
     )
 

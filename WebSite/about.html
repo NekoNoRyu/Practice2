@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrevTech - О проекте</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --primary-color: #1e1e2f;
+            --secondary-color: #27293d;
+            --accent-color: #4a90e2;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --border-color: #3a3f58;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--header-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background-color: var(--accent-color);
+            color: var(--header-color);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        h1, h2 {
+            color: var(--header-color);
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; text-align: center; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+        section {
+            background-color: var(--primary-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #aaa;
+        }
+
+        @media (min-width: 768px) {
+            .site-header .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">ProgrevTech</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Домашняя</a></li>
+                    <li><a href="about.html" class="active">О проекте</a></li>
+                    <li><a href="team.html">Участники</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>О проекте "ProgrevTech"</h1>
+        
+        <section>
+            <h2>Концепция</h2>
+            <p>
+                "ProgrevTech" — это инновационный проект, реализованный в виде Telegram-бота <strong>@GoeGrevBot</strong>. Наша миссия — сделать финансовую грамотность доступной, понятной и увлекательной для широкой аудитории. Мы используем элементы игры, чтобы вовлечь пользователя в процесс обучения и самоанализа. Основной инструмент — интерактивный тест, который определяет психотип пользователя в мире финансов и предлагает индивидуальный путь развития.
+            </p>
+        </section>
+
+        <section>
+            <h2>Цели и задачи</h2>
+            <h3>Ключевые цели проекта:</h3>
+            <ul>
+                <li><strong>Классификация:</strong> Разделить пользователей на четыре категории («Серая масса», «Гой», «Средний класс», «Будущий миллионер») на основе их ответов, чтобы предоставить релевантный контент.</li>
+                <li><strong>Образование:</strong> Предложить каждой категории пользователей уникальные образовательные материалы: от списков литературы и статей до специализированных тестов и интерактивных новелл.</li>
+                <li><strong>Мотивация:</strong> Стимулировать пользователей к развитию, предлагая им перейти на следующий уровень финансовой осознанности и открывая новые возможности внутри бота.</li>
+                <li><strong>Партнёрство:</strong> Интегрировать реферальные ссылки партнёров (банков и брокеров) как логичный следующий шаг для финансово созревших пользователей.</li>
+            </ul>
+            <h3>Основные задачи:</h3>
+            <ul>
+                <li>Разработка Telegram-бота на Python с использованием фреймворка Aiogram.</li>
+                <li>Проектирование и создание базы данных на PostgreSQL для хранения информации о пользователях, вопросах и результатах.</li>
+                <li>Создание уникального контента: текстов, вопросов для тестов, сценария для интерактивной новеллы.</li>
+                <li>Реализация машины состояний (FSM) для управления диалогами и прохождением тестов.</li>
+                <li>Внедрение системы защиты от спама и фоновых задач для отправки напоминаний.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ожидаемые результаты</h2>
+            <p>По итогам реализации проекта мы ожидаем достичь следующих результатов:</p>
+            <ul>
+                <li>Повышение уровня финансовой грамотности и вовлечённости у целевой аудитории.</li>
+                <li>Создание активного сообщества пользователей, стремящихся к финансовому росту.</li>
+                <li>Успешная модель монетизации через партнёрские программы, которая поддерживает дальнейшее развитие проекта.</li>
+                <li>Формирование уникального образовательного инструмента, который можно масштабировать и адаптировать под новые задачи.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProgrevTech. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

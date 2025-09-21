@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrevTech - Журнал</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --primary-color: #1e1e2f;
+            --secondary-color: #27293d;
+            --accent-color: #4a90e2;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --border-color: #3a3f58;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--header-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            background-color: var(--accent-color);
+            color: var(--header-color);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        h1, h2, h3 {
+            color: var(--header-color);
+        }
+
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
+        h3 { font-size: 1.5rem; }
+
+        .journal-post {
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+        }
+        .post-meta {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+            margin-bottom: 0.5rem;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: #aaa;
+        }
+
+        @media (min-width: 768px) {
+            .site-header .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">ProgrevTech</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Домашняя</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Участники</a></li>
+                    <li><a href="journal.html" class="active">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Журнал Проекта</h1>
+
+        <article class="journal-post">
+            <p class="post-meta">Дата: 27.05.2025</p>
+            <h3>Добавлены интерактивные сценарии: новелла и финансовый тест</h3>
+            <p>
+                Проект выходит на новый уровень! Теперь пользователям, получившим результат «Гой» и «Средний класс», доступны уникальные активности. Для «Гоев» мы запустили интерактивную новеллу о построении бизнеса, где каждое решение влияет на финал. Для «Среднего класса» подготовлен углубленный тест по финансам, проверяющий знания в области планирования, налогов и рынков. Это делает путь пользователя более персонализированным и увлекательным.
+            </p>
+        </article>
+
+        <article class="journal-post">
+            <p class="post-meta">Дата: 13.05.2025</p>
+            <h3>Разработан основной тест и система классификации</h3>
+            <p>
+                Завершен ключевой этап разработки — готов основной тест, который является ядром нашего бота. На основе продуманной системы баллов, бот теперь может классифицировать пользователей по четырем категориям: от «Серой массы» до «Будущего миллионера». Вся логика реализована на Aiogram, а ответы и результаты пользователей надёжно сохраняются в базу данных PostgreSQL.
+            </p>
+        </article>
+
+        <article class="journal-post">
+            <p class="post-meta">Дата: 01.04.2025</p>
+            <h3>Старт проекта ProgrevTech!</h3>
+            <p>
+                Сегодня мы объявляем о начале работы над проектом ProgrevTech. Наша цель — создать уникального Telegram-бота для повышения финансовой грамотности в игровой форме. Мы хотим доказать, что изучение финансов может быть не скучным, а захватывающим. Впереди много работы: от написания кода до создания интересного контента. Следите за обновлениями!
+            </p>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProgrevTech. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
