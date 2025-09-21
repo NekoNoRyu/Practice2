@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 
 # Настройки
 API_TOKEN = '8178558928:AAHOG2g-YuQLhzDNuP9A1O-lhBp7YlavywE'
-DATABASE_URL = 'postgresql://postgres:Progrev@localhost:5432/ProgrevTech'
+DATABASE_URL = 'postgresql://postgres:postgres@localhost:5432/ProgrevTech'
 
 # Реферальные ссылки
 REFERRAL_LINKS = {
